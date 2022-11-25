@@ -30,7 +30,7 @@ const NotFoundPage = () => {
       <p style={paragraphStyles}>
         Sorry 😔, we couldn’t find what you were looking for.
         <br />
-        {process.env.NODE_ENV === "development" ? (
+        {process.env.NODE_ENV === "production" ? (
           <>
             <br />
             Try creating a page in <code style={codeStyles}>src/pages/</code>.
