@@ -7,7 +7,7 @@ const BlogPage = () => {
   // noinspection GraphQLUnresolvedReference
   const data = useStaticQuery(graphql`
       query {
-          allSanityPost(sort: { fields: publishedOn, order: DESC }) {
+          allSanityPost(sort: { publishedOn: DESC }) {
               nodes {
                   id
                   publishedOn(formatString: "MMMM DD, YYYY")
@@ -35,7 +35,7 @@ const BlogPage = () => {
 
   return (
       <Layout>
-        <div className="pt-20">
+        <div className="">
           <BlogPosts posts={posts}/>
         </div>
       </Layout>

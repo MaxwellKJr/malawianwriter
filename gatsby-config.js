@@ -20,7 +20,7 @@ module.exports = {
     }, {
         resolve: 'gatsby-source-filesystem',
         options: {
-            "name ": "pages",
+            "name": "pages",
             "path": "./src/pages/"
         },
         __key: "pages"

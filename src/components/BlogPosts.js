@@ -20,7 +20,7 @@ const BlogPosts = ({posts}) => {
         <div
             className="w-full px-5 pb-20 pt-40 sm:pt-24 md:px-0 md:w-3/4 h-full flex flex-col justify-center items-center mx-auto max-w-screen-lg">
           <div>
-            <h1 className="text-2xl mb-4 md:text-4xl text-white font-black font-baskerville text-center uppercase">
+            <h1 className="text-2xl my-16 md:text-4xl text-white font-black font-baskerville text-center uppercase">
               <em>Posts</em>
             </h1>
 

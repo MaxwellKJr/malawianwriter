@@ -13,6 +13,7 @@ const BlogPost = ({post}) => {
 
   return (
       <motion.div
+          variant={item}
           className="rounded-md relative bg-black bg-opacity-50 text-white lg:hover:scale-95 transition-all ease-in-out mb-16 hover:cursor-default">
         <Link to={`/blog/${slug.current}`}>
           <GatsbyImage
