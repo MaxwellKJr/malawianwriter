@@ -16,7 +16,7 @@ const container = {
 const BlogPosts = ({posts}) => {
   return (
       <section
-          className="flex flex-col w-full m-auto bg-gradient-to-bl from-gray-800 to-secondary text-black">
+          className="flex flex-col w-full m-auto text-black">
         <div
             className="w-full px-5 pb-20 pt-40 sm:pt-24 md:px-0 md:w-3/4 h-full flex flex-col justify-center items-center mx-auto max-w-screen-lg">
           <div>

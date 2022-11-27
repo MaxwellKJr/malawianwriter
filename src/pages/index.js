@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Layout from "../components/Layout";
+import {motion} from "framer-motion";
 import Showcase from "../components/Showcase";
 
 const IndexPage = () => {

@@ -11,6 +11,10 @@ module.exports = {
 			colors: {
 				primary: "#00FFA5",
 				secondary: "#003120",
+				"background-light": "#e0fff4",
+			},
+			backgroundImage: {
+				doodles: "url('/static/confetti-doodles.svg')",
 			},
 			fontFamily: {
 				sans: ["Poppins", ...defaultTheme.fontFamily.sans],

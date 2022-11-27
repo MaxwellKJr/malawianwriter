@@ -1,5 +1,6 @@
 import React from 'react';
 import {graphql, useStaticQuery} from "gatsby";
+import {motion} from 'framer-motion'
 import Layout from "../components/Layout";
 import BlogPosts from "../components/BlogPosts";
 
@@ -35,9 +36,12 @@ const BlogPage = () => {
 
   return (
       <Layout>
-        <div className="">
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}>
           <BlogPosts posts={posts}/>
-        </div>
+        </motion.div>
       </Layout>
   );
 };

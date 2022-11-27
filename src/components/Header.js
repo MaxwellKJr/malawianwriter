@@ -36,15 +36,15 @@ const Header = () => {
                   Blog
                 </Link>
               </li>
-              <li>
-                <Link to="/books"
-                      className="text-white font-normal uppercase text-xs p-4"
-                      activeClassName="text-primary font-bold uppercase text-xs p-4"
-                      title="What to read"
-                >
-                  Books
-                </Link>
-              </li>
+              {/*<li>*/}
+              {/*  <Link to="/books"*/}
+              {/*        className="text-white font-normal uppercase text-xs p-4"*/}
+              {/*        activeClassName="text-primary font-bold uppercase text-xs p-4"*/}
+              {/*        title="What to read"*/}
+              {/*  >*/}
+              {/*    Books*/}
+              {/*  </Link>*/}
+              {/*</li>*/}
               <li>
                 <Link to="/about"
                       className="text-white font-normal uppercase text-xs p-4"

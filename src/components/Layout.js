@@ -1,11 +1,14 @@
 import React from 'react';
+import {AnimatePresence} from "framer-motion";
 import Header from "./Header";
 
 const Layout = ({children}) => (
     <>
       <Header/>
-      <main>
-        {children}
+      <main className="bg-doodles">
+        <AnimatePresence>
+          {children}
+        </AnimatePresence>
       </main>
     </>
 );
