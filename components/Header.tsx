@@ -10,7 +10,7 @@ const Header = () => {
 
         <ul className='flex sm:justify-end justify-center w-full uppercase text-sm border-t-[1px] sm:border-0 pt-4 sm:pt-0'>
           <li>
-            <Link href={`/`} className='text-black p-4 hover:text-brand hover:bg-white' title='Read something'>
+            <Link href={`/blog`} className='text-black p-4 hover:text-brand hover:bg-white' title='Read something'>
               Blog
             </Link>
           </li>
