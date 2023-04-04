@@ -2,7 +2,7 @@ import React from 'react';
 
 const Showcase = () => {
   return (
-    <div className='flex flex-col w-full h-[80vh] sm:h-screen justify-center items-center mx-auto px-4'>
+    <div className='flex flex-col w-full h-[90vh] justify-center items-center mx-auto px-4'>
       <div className='text-center sm:text-left w-full sm:w-10/12 max-w-4xl mx-auto'>
         <h1 className='text-4xl font-black font-Poppins'>Writing Because I Can.</h1>
         <p className='text-md text-slate-800 mt-4'>
