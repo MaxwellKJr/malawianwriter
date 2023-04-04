@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         Poppins: ['Poppins, sans-serif'],
+        'Dancing-Script': ['Dancing Script, serif'],
       },
       container: {
         padding: '2rem',
