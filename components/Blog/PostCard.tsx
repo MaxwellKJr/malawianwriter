@@ -1,6 +1,7 @@
 import Link from "next/link"
+import PostCardProps from "../postCard"
 
-const PostCard = ({ post }) => {
+const PostCard = ({ post }: PostCardProps) => {
   const { title, date, description, slug } = post
   return (
     <div className="border-b-[1px] py-8 mb-8 md:mb-0 hover:opacity-75">

@@ -1,14 +1,21 @@
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
+  const buttonClicked = () => {
+    alert("Hi, Mom!")
+  }
+
   return (
-    <nav className='bg-white p-4 fixed top-0 w-full sm:border-b-[1px]'>
-      <div className='flex flex-col sm:flex-row w-full sm:w-10/12 max-w-4xl m-auto justify-center sm:justify-stretch items-center'>
-        <Link href={`/`} className='text-3xl font-Dancing-Script text-black hover:text-brand w-full text-center sm:text-left pb-4 sm:pb-0'>
+    <nav className='bg-white p-4 fixed top-0 w-full border-b-[1px]'>
+      <div className='flex flex-row w-full sm:w-10/12 max-w-4xl m-auto sm:justify-stretch items-center'>
+        <Link href={`/`} className='text-3xl font-Dancing-Script text-black hover:text-brand w-full'>
           Malawian Writer <span className='text-brand hover:text-black'>.</span>
         </Link>
 
-        <ul className='flex sm:justify-end justify-center w-full uppercase text-sm border-t-[1px] sm:border-0 pt-4 sm:pt-0'>
+        <ul className='hidden lg:flex sm:justify-end justify-center w-full uppercase text-sm border-t-[1px] sm:border-0 pt-4 sm:pt-0'>
           <li>
             <Link href={`/blog`} className='text-black p-4 hover:text-brand hover:bg-white' title='Read something'>
               Blog
@@ -25,8 +32,16 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <div className='flex items-center'>
+          <div className='mr-2 p-2 hover:cursor-pointer hover:opacity-75'>
+            <FontAwesomeIcon icon={faBarsStaggered} className='w-4 h-4 sm:w-5 sm:h-5' />
+          </div>
+          <div className='border-[1px] sm:border-2 border-black rounded-md p-2 hover:cursor-pointer hover:opacity-75'>
+            <FontAwesomeIcon icon={faMoon} className='w-4 h-4 sm:w-5 sm:h-5' />
+          </div>
+        </div>
       </div>
-    </nav>
+    </nav >
   );
 };
 

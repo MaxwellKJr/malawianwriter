@@ -1,6 +1,7 @@
 import fs from 'fs'
 import Markdown from 'markdown-to-jsx'
 import matter from 'gray-matter'
+import getPostsMetadata from '@/components/getPostMetadata'
 
 const getPostContent = (slug: string) => {
   const folder = 'posts/'
@@ -11,6 +12,14 @@ const getPostContent = (slug: string) => {
   return matterResult.content
 }
 
+export const generateStaticParams = async () => {
+  const posts = getPostsMetadata()
+
+  return posts.map((post) => ({
+    slug: post.slug
+  }))
+}
+
 const PostPage = (props: any) => {
   const slug = props.params.slug
   const content = getPostContent(slug)
@@ -18,7 +27,7 @@ const PostPage = (props: any) => {
   return (
     <section className='w-full sm:w-10/12 md:w-2/5 lg:w-[30%] max-w-4xl p-4 sm:p-0 mx-auto mt-[12vh] pt-16'>
       <h1 className='text-2xl text-brand font-black'>This is the Post Page</h1>
-      <article class="prose prose-xs">
+      <article className="prose prose-xs">
         <Markdown>{content}</Markdown>
       </article>
     </section>
