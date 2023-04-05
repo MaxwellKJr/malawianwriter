@@ -33,7 +33,7 @@ const Header = () => {
           </li>
         </ul>
         <div className='flex items-center'>
-          <div className='mr-2 p-2 hover:cursor-pointer hover:opacity-75'>
+          <div className='md:hidden mr-2 p-2 hover:cursor-pointer hover:opacity-75'>
             <FontAwesomeIcon icon={faBarsStaggered} className='w-4 h-4 sm:w-5 sm:h-5' />
           </div>
           <div className='border-[1px] sm:border-2 border-black rounded-md p-2 hover:cursor-pointer hover:opacity-75'>
