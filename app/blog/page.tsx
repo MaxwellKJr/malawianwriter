@@ -1,6 +1,9 @@
 import Posts from '@/components/Blog/Posts'
 import getPostsMetadata from '@/components/getPostMetadata'
 
+export const metadata = {
+  title: 'Malawian Writer on Writing | Blog',
+}
 
 const BlogPage = () => {
   const postMetadata = getPostsMetadata()
