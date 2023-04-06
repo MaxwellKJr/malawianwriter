@@ -5,8 +5,12 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
+      backgroundImage: {
+        zigzag: './public/images/architect.svg'
+      },
       colors: {
         brand: '#ff0077',
         'brand-darker': '#ff0044',

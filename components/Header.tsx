@@ -1,15 +1,37 @@
+'use client'
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
-  const buttonClicked = () => {
-    alert("Hi, Mom!")
+  const { systemTheme, theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const renderThemeChanger = () => {
+    if (!mounted) return null
+    const currentTheme = theme === 'system' ? systemTheme : theme
+
+    if (currentTheme === 'dark') {
+      return (
+        <FontAwesomeIcon icon={faSun} className='w-4 h-4 sm:w-5 sm:h-5 border-[1px] sm:border-2 border-black dark:border-gray-300 rounded-md p-2 select-none hover:cursor-pointer hover:opacity-75'
+          role='button' onClick={() => setTheme('light')} />
+      )
+    } else {
+      return (
+        <FontAwesomeIcon icon={faMoon} className='w-4 h-4 sm:w-5 sm:h-5 border-[1px] sm:border-2 border-black dark:border-gray-300 rounded-md p-2 select-none hover:cursor-pointer hover:opacity-75' role='button' onClick={() => setTheme('dark')} />
+      )
+    }
   }
 
   return (
-    <nav className='bg-white p-4 fixed top-0 w-full border-b-[1px]'>
+    <nav className='bg-white dark:bg-black dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px]'>
       <div className='flex flex-row w-full sm:w-10/12 max-w-4xl m-auto sm:justify-stretch items-center'>
         <Link href={`/`} className='text-3xl font-Dancing-Script text-black hover:text-brand w-full'>
           Malawian Writer <span className='text-brand hover:text-black'>.</span>
@@ -36,9 +58,7 @@ const Header = () => {
           <div className='md:hidden mr-2 p-2 hover:cursor-pointer hover:opacity-75'>
             <FontAwesomeIcon icon={faBarsStaggered} className='w-4 h-4 sm:w-5 sm:h-5' />
           </div>
-          <div className='border-[1px] sm:border-2 border-black rounded-md p-2 hover:cursor-pointer hover:opacity-75'>
-            <FontAwesomeIcon icon={faMoon} className='w-4 h-4 sm:w-5 sm:h-5' />
-          </div>
+          {renderThemeChanger()}
         </div>
       </div>
     </nav >

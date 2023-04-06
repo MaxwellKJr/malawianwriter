@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Poppins';
+@layer base {
+  body {
+    @apply font-Poppins bg-white text-black dark:bg-black dark:text-gray-300;
+  }
+
+  a {
+    @apply dark:text-gray-300;
+  }
+
+  p {
+    @apply dark:text-gray-300;
+  }
 }
