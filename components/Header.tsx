@@ -31,9 +31,9 @@ const Header = () => {
   }
 
   return (
-    <nav className='bg-white dark:bg-black dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px]'>
-      <div className='flex flex-row w-full sm:w-10/12 max-w-4xl m-auto sm:justify-stretch items-center'>
-        <Link href={`/`} className='text-3xl font-Dancing-Script text-black hover:text-brand w-full'>
+    <nav className='bg-white dark:bg-black dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px] h-[10vh]'>
+      <div className='flex flex-row w-full h-full sm:w-10/12 max-w-4xl m-auto sm:justify-between items-center'>
+        <Link href={`/`} className='block text-3xl font-Dancing-Script text-black hover:text-brand w-full'>
           Malawian Writer <span className='text-brand hover:text-black'>.</span>
         </Link>
 

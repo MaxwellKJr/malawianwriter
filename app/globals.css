@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-Poppins bg-white text-black dark:bg-black dark:text-gray-300;
+    @apply scroll-smooth font-Poppins bg-white text-black dark:bg-black dark:text-gray-300;
   }
 
   a {
@@ -15,5 +15,9 @@
 
   p {
     @apply dark:text-gray-300;
+  }
+
+  svg {
+    @apply transition-all ease-in-out duration-300;
   }
 }
