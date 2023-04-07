@@ -20,20 +20,20 @@ const Header = () => {
 
     if (currentTheme === 'dark') {
       return (
-        <FontAwesomeIcon icon={faSun} className='w-4 h-4 sm:w-5 sm:h-5 border-[1px] sm:border-2 border-black dark:border-gray-300 rounded-md p-2 select-none hover:cursor-pointer hover:opacity-75'
+        <FontAwesomeIcon icon={faSun} className='w-4 h-4 bg-gray-300 text-black rounded-lg p-2 select-none hover:cursor-pointer hover:scale-[.80]'
           role='button' onClick={() => setTheme('light')} />
       )
     } else {
       return (
-        <FontAwesomeIcon icon={faMoon} className='w-4 h-4 sm:w-5 sm:h-5 border-[1px] sm:border-2 border-black dark:border-gray-300 rounded-md p-2 select-none hover:cursor-pointer hover:opacity-75' role='button' onClick={() => setTheme('dark')} />
+        <FontAwesomeIcon icon={faMoon} className='w-4 h-4 bg-black text-white rounded-lg p-2 select-none hover:cursor-pointer  hover:scale-[.80]' role='button' onClick={() => setTheme('dark')} />
       )
     }
   }
 
   return (
-    <nav className='bg-white dark:bg-black dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px] h-[10vh]'>
+    <nav className='bg-white dark:bg-black dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px] h-[10vh] z-50'>
       <div className='flex flex-row w-full h-full sm:w-10/12 max-w-4xl m-auto sm:justify-between items-center'>
-        <Link href={`/`} className='block text-3xl font-Dancing-Script text-black hover:text-brand w-full'>
+        <Link href={`/`} className='block text-3xl font-Dancing-Script text-black dark:text-white dark:hover:text-brand hover:text-brand w-full'>
           Malawian Writer <span className='text-brand hover:text-black'>.</span>
         </Link>
 
@@ -54,6 +54,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+
         <div className='flex items-center'>
           <div className='md:hidden mr-2 p-2 hover:cursor-pointer hover:opacity-75'>
             <FontAwesomeIcon icon={faBarsStaggered} className='w-4 h-4 sm:w-5 sm:h-5' />
