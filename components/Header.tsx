@@ -65,7 +65,7 @@ const Header = () => {
 
   return (
     <nav className='bg-white dark:bg-gray-900 dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px] h-[10vh] z-50'>
-      <div className='relative flex flex-row w-full h-full sm:w-10/12 max-w-4xl m-auto sm:justify-between items-center'>
+      <div className='flex flex-row w-full h-full sm:w-10/12 max-w-4xl m-auto sm:justify-between items-center'>
         <Link href={`/`} className='inline-block text-3xl font-Dancing-Script text-black dark:text-white dark:hover:text-brand hover:text-brand w-full' onClick={() => setToggleNav(false)}>
           Malawian Writer <span className='text-brand hover:text-black'>.</span>
         </Link>
@@ -82,8 +82,8 @@ const Header = () => {
           }
         </ul>
 
-        <ul className={toggleNav ? `absolute lg:hidden top-[10vh] left-0 h-[90vh] w-full mx-auto pt-4 bg-white dark:bg-gray-900 z-50`
-          : `hidden lg:hidden top-[10vh] left-0 h-[90vh] w-full mx-auto pt-4 bg-white dark:bg-gray-900 z-50`
+        <ul className={toggleNav ? `absolute lg:hidden top-[10vh] left-0 h-[90vh] w-full mx-auto p-4 bg-white dark:bg-gray-900 z-50 transition-all ease-in-out duration-500 transform translate-x-[0]`
+          : `absolute lg:hidden top-[10vh] left-0 h-[90vh] w-full mx-auto p-4 bg-white dark:bg-gray-900 z-50 transition-all ease-in-out duration-700 transform translate-x-[200%]`
         }>
           {
             links.map((link) => (
