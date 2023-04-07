@@ -7,7 +7,7 @@
 @layer base {
   body {
     @apply scroll-smooth font-Poppins bg-white text-black dark:bg-gray-900 dark:text-gray-300;
-    @apply overflow-hidden;
+    @apply overflow-x-hidden;
   }
 
   a {

@@ -5,6 +5,7 @@ import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import SocialLinks from './SocialLinks';
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme()
@@ -94,6 +95,10 @@ const Header = () => {
               </li>
             ))
           }
+
+          <h5 className='text-xl font-black mt-8 mb-4 text-zinc-800'>Contact Me</h5>
+
+          <SocialLinks />
         </ul>
 
         <div className='flex items-center'>
