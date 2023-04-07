@@ -1,3 +1,4 @@
+import PageWrapper from '@/components/PageWrapper';
 import Showcase from '@/components/Showcase';
 
 export const metadata = {
@@ -7,8 +8,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main>
-      <Showcase />
-    </main>
+    <PageWrapper>
+      <main>
+        <Showcase />
+      </main>
+    </PageWrapper>
   );
 }

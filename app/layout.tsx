@@ -1,7 +1,9 @@
+'use client'
 import Header from '@/components/Header'
 import './globals.css'
 import Footer from '@/components/Footer'
 import { Providers } from './Providers'
+import { AnimatePresence, motion } from 'framer-motion'
 
 export default function RootLayout({
   children,
@@ -13,7 +15,9 @@ export default function RootLayout({
       <body>
         <Providers>
           <Header />
-          {children}
+          <div>
+            {children}
+          </div>
           <Footer />
         </Providers>
       </body>
