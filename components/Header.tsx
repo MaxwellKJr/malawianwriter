@@ -2,10 +2,11 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
-import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
+import { faBarsStaggered, faClose, faCross } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import SocialLinks from './SocialLinks';
+import Footer from './Footer';
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme()
@@ -22,39 +23,15 @@ const Header = () => {
 
     if (currentTheme === 'dark') {
       return (
-        <FontAwesomeIcon icon={faSun} className='w-4 h-4 bg-gray-300 text-black rounded-lg p-2 select-none hover:cursor-pointer hover:scale-[.80]'
+        <FontAwesomeIcon icon={faSun} className='w-4 h-4 bg-slate-300 text-black rounded-lg p-2 select-none hover:cursor-pointer hover:scale-[.80]'
           role='button' onClick={() => setTheme('light')} />
       )
     } else {
       return (
-        <FontAwesomeIcon icon={faMoon} className='w-4 h-4 bg-slate-800 text-white rounded-lg p-2 select-none hover:cursor-pointer  hover:scale-[.80]' role='button' onClick={() => setTheme('dark')} />
+        <FontAwesomeIcon icon={faMoon} className='w-4 h-4 bg-zinc-800 text-white rounded-lg p-2 select-none hover:cursor-pointer hover:scale-[.80]' role='button' onClick={() => setTheme('dark')} />
       )
     }
   }
-
-  // const toggleSidebar = () => {
-  //   if (toggleNav === true) {
-  //     return (
-  //       <ul className='absolute lg:hidden top-[10vh] left-0 h-[90vh] w-full mx-auto pt-4 bg-white dark:bg-gray-900 z-50'>
-  //         <li>
-  //           <Link href={`/blog`} className='inline-block py-8 w-full border-b-[1px] uppercase text-sm' title='Read something'>
-  //             Blog
-  //           </Link>
-  //         </li>
-  //         <li>
-  //           <Link href={`/`} className='inline-block py-8 w-full border-b-[1px] uppercase text-sm' title='Could be fiction'>
-  //             Stories
-  //           </Link>
-  //         </li>
-  //         <li>
-  //           <Link href={`/`} className='inline-block py-8 w-full border-b-[1px] uppercase text-sm' title='See what I am working on'>
-  //             Current Projects
-  //           </Link>
-  //         </li>
-  //       </ul>
-  //     )
-  //   }
-  // }
 
   const links = [
     { href: '/', label: 'Home', title: 'Home' },
@@ -62,7 +39,6 @@ const Header = () => {
     { href: '/stories', label: 'Stories', title: 'Could be fiction' },
     { href: '/in-progress', label: 'In Progress', title: 'Work-in-progress' },
   ]
-
 
   return (
     <nav className='bg-white dark:bg-gray-900 dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px] h-[10vh] z-50'>
@@ -96,14 +72,17 @@ const Header = () => {
             ))
           }
 
-          <h5 className='text-xl font-black mt-8 mb-4 text-zinc-800'>Contact Me</h5>
+          <h5 className='text-xl font-black mt-8 mb-4 text-zinc-900 dark:text-white'>Contact Me</h5>
 
           <SocialLinks />
+          <br />
+          <br />
+          <Footer />
         </ul>
 
         <div className='flex items-center'>
-          <div className='lg:hidden mr-2 p-2 hover:cursor-pointer hover:opacity-75' onClick={() => setToggleNav(!toggleNav)}>
-            <FontAwesomeIcon icon={faBarsStaggered} className='w-4 h-4 sm:w-5 sm:h-5' />
+          <div className='lg:hidden mr-2 p-2 hover:cursor-pointer hover:opacity-75 transition-all ease-in-out duration-300' onClick={() => setToggleNav(!toggleNav)}>
+            <FontAwesomeIcon icon={toggleNav ? faClose : faBarsStaggered} className='w-4 h-4 sm:w-5 sm:h-5 transition-all ease-in-out duration-1000' />
           </div>
           {renderThemeChanger()}
         </div>

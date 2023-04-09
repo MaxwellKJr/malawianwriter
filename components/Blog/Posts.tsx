@@ -12,13 +12,13 @@ interface PostsProps {
 
 const Posts = ({ postMetadata }: PostsProps) => {
   return (
-    <div className='flex flex-col md:grid md:grid-cols-2 md:gap-4 w-full h-full'>
+    <section className='flex flex-col md:grid md:grid-cols-2 md:gap-4 w-full h-full'>
       {
         postMetadata.map((post) => (
           <PostCard key={post.slug} post={post} />
         ))
       }
-    </div>
+    </section>
   )
 }
 

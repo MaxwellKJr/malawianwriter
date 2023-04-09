@@ -11,9 +11,9 @@ const BlogPage = () => {
 
   return (
     <PageWrapper>
-      <main>
+      <main className='mt-[12vh] pt-16'>
         <div className='w-full sm:w-10/12 max-w-4xl p-4 mx-auto'>
-          <h1 className='text-2xl font-black pt-20'>On Writing<span className='text-brand'>.</span></h1>
+          <h1 className='text-2xl font-black text-center mb-16'>On Writing<span className='text-brand'>.</span></h1>
           <Posts postMetadata={postMetadata} />
         </div>
       </main>
