@@ -12,11 +12,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className='flex flex-col min-h-screen'>
         <Providers>
-          <Header />
-          <div>
-            {children}
+          <div className='flex-1'>
+            <Header />
+            <div>
+              {children}
+            </div>
           </div>
           <Footer />
         </Providers>
