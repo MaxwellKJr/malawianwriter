@@ -1,7 +1,7 @@
 ---
 title: Hello, World
 featuredImage: hello-world.jpg
-date: 2021-07-29T06:10:05.639Z
+date: 2021-07-29T06:10:05.639
 description: This is a story of how video games led me to the path of writing
   code, made me make the right choices, and showed me the greatness and beauty
   of programming.

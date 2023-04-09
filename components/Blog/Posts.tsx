@@ -7,6 +7,7 @@ interface PostsProps {
     date: string
     description: string
     slug: string
+    tags: []
   }>
 }
 

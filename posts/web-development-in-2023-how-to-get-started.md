@@ -1,12 +1,11 @@
 ---
 title: Web Development in 2023 (How to Get Started)
-date: 2023-01-04T06:27:24.555Z
+date: 2023-01-04T06:27:24.555
 featuredImage: html-css-javascript.jpg
 description: Here is an updated version of how I would get into web development
   in 2023. I have learned a lot throughout my coding journey that started in
   2017 and there are things I wish I could have done differently.
-tags:
-  - Tech
+tags: ['Tech']
 ---
 The world of Computer Science let alone programming can feel like a rabbit hole when you do not know much and this is what usually turns people off before they even begin. Computer Science is more complicated and complex compared to other fields, and with a learning curve that's steeper than learning how to get good at Dark Souls.
 

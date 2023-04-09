@@ -16,6 +16,7 @@ const getPostsMetadata = (): PostMetadata[] => {
       date: matterResult.data.date,
       description: matterResult.data.description,
       slug: fileName.replace(".md", ""),
+      tags: matterResult.data.tags
     }
   })
 
