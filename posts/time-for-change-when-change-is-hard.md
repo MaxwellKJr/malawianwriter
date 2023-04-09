@@ -1,7 +1,7 @@
 ---
 title: When Change is Hard
 featuredImage: time-for-change.jpg
-date: 2021-07-31T13:52:48.488
+date: 2021-07-31
 description: Earlier this year, I made the final changes and fixes to my
   website. I was glad that I was at the end of the road, was determined (at
   least that’s what I thought) to make it a super-active tech site once it was

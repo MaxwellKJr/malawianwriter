@@ -1,7 +1,7 @@
 ---
 title: Is MASTODON the Twitter Killer?
 featuredImage: mastodon_1161x653-800x450-3985332959.jpg
-date: 2022-11-09T14:47:04.860
+date: 2022-11-09
 description: 'Not a lot of people like the idea of Twitter being owned by one person and to make things worse, that person being Elon Musk. Millions have opted for other alternatives, namely, Mastodon.'
 tags: [Twitter, Social Media, FOSS, Elon Musk]
 ---

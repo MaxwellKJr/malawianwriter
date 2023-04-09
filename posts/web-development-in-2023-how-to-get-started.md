@@ -1,6 +1,6 @@
 ---
 title: Web Development in 2023 (How to Get Started)
-date: 2023-01-04T06:27:24.555
+date: 2023-01-04
 featuredImage: html-css-javascript.jpg
 description: Here is an updated version of how I would get into web development
   in 2023. I have learned a lot throughout my coding journey that started in

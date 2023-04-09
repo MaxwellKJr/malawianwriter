@@ -3,6 +3,7 @@ import getPostsMetadata from '@/components/getPostMetadata'
 import PageWrapper from '@/components/PageWrapper'
 import Markdown from 'markdown-to-jsx'
 import matter from 'gray-matter'
+import moment from 'moment'
 
 const getPostContent = (slug: string) => {
   const folder = 'posts/'
@@ -24,11 +25,12 @@ export const generateStaticParams = async () => {
 const PostPage = (props: any) => {
   const slug = props.params.slug
   const post = getPostContent(slug)
+  const date = post.data.date
 
   return (
     <PageWrapper>
       <div className='w-full sm:w-10/12 md:w-2/5 lg:w-[30%] max-w-4xl p-4 sm:px-0 mx-auto mt-[12vh] pt-16'>
-        <small>{post.data.date}</small>
+        <small className='text-gray-700 dark:text-gray-300 opacity-80'>{moment(date).format('dddd, Do MMMM YYYY')}</small>
         <h1 className='text-2xl sm:text-3xl md:text-4xl text-brand font-black'>{post.data.title}</h1>
         <ul className="flex mt-4">
           {post.data.tags.map((tag: any) => (
