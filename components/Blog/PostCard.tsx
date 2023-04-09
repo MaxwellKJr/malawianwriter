@@ -2,6 +2,7 @@ import Link from "next/link"
 import PostCardProps from "../postCard"
 import moment from 'moment'
 import 'moment-timezone';
+import Tags from "./Tags";
 
 const PostCard = ({ post }: PostCardProps) => {
   const { title, date, description, slug, tags } = post
@@ -15,13 +16,7 @@ const PostCard = ({ post }: PostCardProps) => {
         <h2 className="text-brand dark:hover:text-gray-300 text-2xl md:text-3xl 2xl:text-4xl font-serif font-bold">{title}</h2>
       </Link>
       <p className="text-sm md:text-lg 2xl:text-xl font-serif text-zinc-800 mt-4">{description}</p>
-      <ul className="flex mt-4">
-        {tags.map((tag) => (
-          <li className="inline-block first:ml-0 mx-[3px] px-2 bg-zinc-800 dark:bg-gray-300 dark:text-zinc-800 rounded-xl text-white text-[10px]">
-            {tag}
-          </li>
-        ))
-        }</ul>
+      <Tags tags={tags} />
     </div>
   )
 }
