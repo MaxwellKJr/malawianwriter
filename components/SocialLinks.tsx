@@ -14,7 +14,7 @@ const SocialLinks = () => {
     <ul className='flex flex-row'>
       {socialLinks.map((link) => (
         <li key={link.href}>
-          <a className='first:pl-0 p-4 text-zinc-800 opacity-90' href={link.href} title={`Follow on ${link.title}`} target='_blank' rel='noreferrer'>
+          <a className='inline-block first:pl-0 p-4 text-zinc-800 opacity-90' href={link.href} title={`Follow on ${link.title}`} target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={link.icon} className='w-5 h-5 transform transition-all hover:-translate-y-2 ' />
           </a>
         </li>

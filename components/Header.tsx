@@ -41,17 +41,17 @@ const Header = () => {
   ]
 
   return (
-    <nav className='bg-white dark:bg-gray-900 dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px] h-[10vh] z-50'>
+    <nav className='bg-white dark:bg-gray-900 dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px] dark:border-gray-300 dark:border-opacity-20 h-[10vh] z-50'>
       <div className='flex flex-row w-full h-full sm:w-10/12 max-w-4xl m-auto sm:justify-between items-center'>
         <Link href={`/`} className='inline-block text-3xl font-Dancing-Script text-black dark:text-white dark:hover:text-brand hover:text-brand w-full' onClick={() => setToggleNav(false)}>
           Malawian Writer <span className='text-brand hover:text-black'>.</span>
         </Link>
 
-        <ul className='hidden lg:flex sm:justify-end justify-center w-full uppercase text-sm border-t-[1px] sm:border-0 pt-4 sm:pt-0'>
+        <ul className='hidden lg:flex sm:justify-end justify-center w-full border-t-[1px] sm:border-0 pt-4 sm:pt-0'>
           {
             links.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className='text-black p-4 hover:text-brand hover:bg-white' title={link.title} onClick={() => setToggleNav(!toggleNav)}>
+                <Link href={link.href} className='uppercase text-xs xl:text-xs 2xl:text-sm text-black p-4 hover:text-brand' title={link.title} onClick={() => setToggleNav(!toggleNav)}>
                   {link.label}
                 </Link>
               </li>
@@ -65,24 +65,23 @@ const Header = () => {
           {
             links.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className='inline-block py-8 w-full border-b-[1px] uppercase text-sm' title={link.title} onClick={() => setToggleNav(!toggleNav)}>
+                <Link href={link.href} className='inline-block py-8 w-full border-b-[1px] dark:border-gray-300 dark:border-opacity-20 uppercase text-sm hover:text-brand' title={link.title} onClick={() => setToggleNav(!toggleNav)}>
                   {link.label}
                 </Link>
               </li>
             ))
           }
 
-          <h5 className='text-xl font-black mt-8 mb-4 text-zinc-900 dark:text-white'>Contact Me</h5>
+          <h5 className='text-xl font-black mt-8 text-zinc-900 dark:text-white'>Contact Me</h5>
 
           <SocialLinks />
-          <br />
           <br />
           <Footer />
         </ul>
 
         <div className='flex items-center'>
           <div className='lg:hidden mr-2 p-2 hover:cursor-pointer hover:opacity-75 transition-all ease-in-out duration-300' onClick={() => setToggleNav(!toggleNav)}>
-            <FontAwesomeIcon icon={toggleNav ? faClose : faBarsStaggered} className='w-4 h-4 sm:w-5 sm:h-5 transition-all ease-in-out duration-1000' />
+            <FontAwesomeIcon icon={toggleNav ? faClose : faBarsStaggered} className='w-4 h-4 sm:w-5 sm:h-5 transition-all ease-in-out duration-300' />
           </div>
           {renderThemeChanger()}
         </div>
