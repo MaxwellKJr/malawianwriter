@@ -28,8 +28,15 @@ const PostPage = (props: any) => {
   return (
     <PageWrapper>
       <div className='w-full sm:w-10/12 md:w-2/5 lg:w-[30%] max-w-4xl p-4 sm:px-0 mx-auto mt-[12vh] pt-16'>
-        <h1 className='text-2xl sm:text-3xl md:text-4xl text-brand font-black'>{post.data.title}</h1>
         <small>{post.data.date}</small>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl text-brand font-black'>{post.data.title}</h1>
+        <ul className="flex mt-4">
+          {post.data.tags.map((tag: any) => (
+            <li className="inline-block first:ml-0 mx-[4px] px-2 bg-zinc-800 dark:bg-gray-300 dark:text-zinc-800 rounded-xl text-white text-[10px]">
+              {tag}
+            </li>
+          ))
+          }</ul>
         <article className="prose prose-zinc prose-base xl:prose-lg 2xl:prose-xl prose-headings:text-brand prose-headings:font-bold prose-h4:text-xl prose-h5:text-2xl prose-p:font-serif prose-a:text-brand">
           <Markdown>{post.content}</Markdown>
         </article>
