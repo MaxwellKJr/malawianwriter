@@ -2,8 +2,8 @@ import PageWrapper from '@/components/PageWrapper';
 import Showcase from '@/components/Showcase';
 
 export const metadata = {
-  title: 'Malawian Writer | Home',
-  description: 'The Malawian Writer is all about books and writing. From African Literature to stories from "A Galaxy Far Far Away".'
+  title: 'Malawian Writer 🇲🇼 - Home',
+  description: 'The Malawian Writer fiends for great stories, books and writing. From African Literature to stories from "A Galaxy Far Far Away".'
 }
 
 export default function Home() {

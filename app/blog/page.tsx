@@ -3,7 +3,8 @@ import PageWrapper from '@/components/PageWrapper'
 import getPostsMetadata from '@/components/getPostMetadata'
 
 export const metadata = {
-  title: 'Malawian Writer on Writing | Blog',
+  title: 'Malawian Writer on Writing 🇲🇼 | Blog',
+  description: 'The Malawian Writer shares everything regarding writing and storytelling in generally, favorite books, recommendations and in search of the next GREAT story.'
 }
 
 const BlogPage = () => {

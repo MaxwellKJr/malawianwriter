@@ -5,6 +5,7 @@ import Markdown from 'markdown-to-jsx'
 import matter from 'gray-matter'
 import moment from 'moment'
 import Tags from '@/components/Blog/Tags'
+import Head from 'next/head'
 
 const getPostContent = (slug: string) => {
   const folder = 'posts/'
@@ -30,6 +31,11 @@ const PostPage = (props: any) => {
 
   return (
     <PageWrapper>
+      <title>{`${post.data.title} | Malawian Writer 🇲🇼`}</title>
+      <meta
+        property="og:description"
+        content={`${post.data.description}`}
+      />
       <div className='w-full sm:w-10/12 md:w-2/5 lg:w-[30%] max-w-4xl p-4 sm:px-0 mx-auto mt-[12vh] pt-16'>
         <small className='text-gray-700 dark:text-gray-300 opacity-80'>{moment(date).format('dddd, Do MMMM YYYY')}</small>
         <h1 className='text-2xl sm:text-3xl md:text-4xl text-brand font-black'>{post.data.title}</h1>
