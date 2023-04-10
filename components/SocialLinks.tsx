@@ -4,7 +4,7 @@ import React from 'react'
 
 const socialLinks = [
   { href: 'https://facebook.com/malawianwriter', icon: faFacebook, title: 'Facebook' },
-  { href: 'https://tiktok.com/malawianwriter', icon: faTiktok, title: 'TikTok' },
+  { href: 'https://tiktok.com/@malawianwriter', icon: faTiktok, title: 'TikTok' },
   { href: 'https://instagram.com/malawianwriter', icon: faInstagram, title: 'Instagram' },
   { href: 'https://twitter.com/malawianwriter', icon: faTwitter, title: 'Twitter' },
 ]
