@@ -1,10 +1,16 @@
+import { Metadata } from 'next'
 import Posts from '@/components/Blog/Posts'
 import PageWrapper from '@/components/PageWrapper'
 import getPostsMetadata from '@/components/getPostMetadata'
 
-export const metadata = {
-  title: 'Malawian Writer on Writing 🇲🇼 | Blog',
-  description: 'The Malawian Writer shares everything regarding writing and storytelling in generally, favorite books, recommendations and in search of the next GREAT story.'
+export const metadata: Metadata = {
+  openGraph: {
+    title: 'Malawian Writer on Writing 🇲🇼 | Blog',
+    description: 'The Malawian Writer shares everything regarding writing and storytelling in generally, favorite books, recommendations and in search of the next GREAT story.',
+    url: 'https://malawianwriter.vercel.app',
+    siteName: 'Malawian Writer',
+    type: 'website'
+  }
 }
 
 const BlogPage = () => {

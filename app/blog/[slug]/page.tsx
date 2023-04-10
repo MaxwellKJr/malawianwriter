@@ -36,6 +36,23 @@ const PostPage = (props: any) => {
         property="og:description"
         content={`${post.data.description}`}
       />
+      <meta property="og:title" content={`${post.data.title} | Malawian Writer 🇲🇼`} />
+      <meta
+        property="og:description"
+        content={`${post.data.description}`}
+      />
+      <meta
+        property="og:url"
+        content={`https://malawianwriter.vercel.app/blog/${slug}`}
+      />
+      <meta property="og:author" content="Maxwell Kapezi Jr" />
+      <meta property="og:type" content="article" />
+      <meta property="article:published_time" content={moment(date).format('dddd, Do MMMM YYYY')} />
+      <meta name="twitter:title" content={`${post.data.title} | Malawian Writer 🇲🇼 `} />
+      <meta name="twitter:description" content={`${post.data.description}`} />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@malawianwriter" />
+      <meta name="twitter:creator" content="@malawianwriter" />
       <div className='w-full sm:w-10/12 md:w-2/5 lg:w-[30%] max-w-4xl p-4 sm:px-0 mx-auto mt-[12vh] pt-16'>
         <small className='text-gray-700 dark:text-gray-300 opacity-80'>{moment(date).format('dddd, Do MMMM YYYY')}</small>
         <h1 className='text-2xl sm:text-3xl md:text-4xl text-brand font-black'>{post.data.title}</h1>
