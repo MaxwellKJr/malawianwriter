@@ -33,7 +33,7 @@ const PostPage = (props: any) => {
     <PageWrapper>
       <title>{`${post.data.title} | Malawian Writer 🇲🇼`}</title>
       <meta
-        property="og:description"
+        property="description"
         content={`${post.data.description}`}
       />
       <meta property="og:title" content={`${post.data.title} | Malawian Writer 🇲🇼`} />

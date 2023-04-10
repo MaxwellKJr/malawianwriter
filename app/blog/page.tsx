@@ -4,6 +4,8 @@ import PageWrapper from '@/components/PageWrapper'
 import getPostsMetadata from '@/components/getPostMetadata'
 
 export const metadata: Metadata = {
+  title: 'Malawian Writer 🇲🇼 - Home',
+  description: 'The Malawian Writer fiends for great stories, books and writing. From African Literature to stories from "A Galaxy Far Far Away".',
   openGraph: {
     title: 'Malawian Writer on Writing 🇲🇼 | Blog',
     description: 'The Malawian Writer shares everything regarding writing and storytelling in generally, favorite books, recommendations and in search of the next GREAT story.',
