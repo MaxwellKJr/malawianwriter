@@ -12,6 +12,7 @@ module.exports = {
         zigzag: './public/images/architect.svg'
       },
       colors: {
+        white: '#f9f9f9',
         brand: '#ff0077',
         'brand-darker': '#ff0044',
       },

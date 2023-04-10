@@ -41,7 +41,7 @@ const Header = () => {
   }
 
   return (
-    <nav className='bg-[#f9f9f9] dark:bg-gray-900 dark:text-gray-300 p-4 fixed top-0 w-full border-b-[1px] dark:border-gray-300 dark:border-opacity-20 h-[10vh] z-50'>
+    <nav className='bg-white/30 dark:bg-gray-900/30 dark:text-gray-300 backdrop-blur-md p-4 fixed top-0 w-full border-b-[1px] dark:border-gray-300 dark:border-opacity-20 h-[10vh] z-50'>
       <div className='flex flex-row w-full h-full sm:w-10/12 max-w-4xl m-auto justify-between items-center'>
         <Link href={`/`} className='inline-block text-3xl font-Dancing-Script text-black dark:text-white dark:hover:text-brand hover:text-brand' title='The Warm Heart 🇲🇼 Writer' onClick={() => setToggleNav(false)}>
           Malawian Writer <span className='text-brand hover:text-black'>.</span>
