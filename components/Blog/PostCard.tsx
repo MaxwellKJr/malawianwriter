@@ -15,7 +15,7 @@ const PostCard = ({ post }: PostCardProps) => {
       <Link href={`/blog/${slug}`}>
         <h2 className="text-brand dark:hover:text-gray-300 text-2xl md:text-3xl 2xl:text-4xl font-serif font-bold">{title}</h2>
       </Link>
-      <p className="text-sm md:text-lg 2xl:text-xl font-serif text-zinc-800 mt-4">{description}</p>
+      <p className="text-sm md:text-md 2xl:text-lg font-Baskerville text-zinc-800 mt-4">{description}</p>
       <Tags tags={tags} />
     </div>
   )

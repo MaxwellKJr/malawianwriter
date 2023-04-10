@@ -8,7 +8,7 @@ const Showcase = () => {
           A writer, <span>fiending <br className='hidden lg:block' />
             for <span className='text-brand'>great</span> stories</span>
           <span className='text-brand'>.</span></h1>
-        <p className='text-sm sm:text-md text-slate-800 mt-4'>
+        <p className='font-Baskerville text-sm sm:text-md text-slate-800 mt-4 lg:max-w-md'>
           {`It all started with Harry Potter and The Sorcerer's Stone and the rest is, well... history.`}
         </p>
       </div>

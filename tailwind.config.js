@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         Poppins: ['Poppins, sans-serif'],
         'Dancing-Script': ['Dancing Script, serif'],
+        Baskerville: 'Libre Baskerville',
       },
       container: {
         padding: '2rem',

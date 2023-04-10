@@ -34,7 +34,7 @@ const PostPage = (props: any) => {
         <small className='text-gray-700 dark:text-gray-300 opacity-80'>{moment(date).format('dddd, Do MMMM YYYY')}</small>
         <h1 className='text-2xl sm:text-3xl md:text-4xl text-brand font-black'>{post.data.title}</h1>
         <Tags tags={post.data.tags} />
-        <article className="prose prose-zinc prose-base xl:prose-lg 2xl:prose-xl prose-headings:text-brand prose-headings:font-bold prose-h4:text-xl prose-h5:text-2xl prose-p:font-serif prose-a:text-brand">
+        <article className="prose prose-zinc prose-sm xl:prose-base 2xl:prose-lg prose-headings:text-brand prose-headings:font-bold prose-h4:text-lg prose-h5:text-xl prose-p:font-Baskerville prose-a:text-brand">
           <Markdown>{post.content}</Markdown>
         </article>
       </div>
