@@ -8,8 +8,8 @@ const Showcase = () => {
           A writer, <span>fiending <br className='hidden lg:block' />
             for <span className='text-brand'>great</span> stories</span>
           <span className='text-brand'>.</span></h1>
-        <p className='font-Baskerville text-sm sm:text-md text-slate-800 mt-4 lg:max-w-md'>
-          {`It all started with Harry Potter and The Sorcerer's Stone and the rest is, well... history.`}
+        <p className='font-Baskerville text-sm sm:text-md text-slate-800 mt-6 lg:max-w-md'>
+          It all started with <a href='https://www.amazon.com/Harry-Potter-Sorcerers-Stone-Rowling/dp/059035342X' rel='noreferrer' className='text-brand dark:text-brand'><em>Harry Potter and The Sorcerer's Stone</em></a> and the rest is, well... history.
         </p>
       </div>
     </section>
