@@ -1,22 +1,45 @@
 # The Malawian Writer Website
 
-## Simple And Straight to the Point
----
-The Malawian Writer Website is a markdown driven site built with Next.js 13 and TypeScript
-### To Get Started
-#### 1. Clone this repo
+## Simple, Elegant and Straight to the Point
+
+The Malawian Writer Website is a markdown driven site built with Next.js 13, TypeScript and Tailwind
+
+## 🧐 What's inside?
+
+A quick look at the top-level files and directories.
+
+    .
+    ├── .git
+    ├── .next
+    ├── .prettierrc
+    ├── app
+    ├── components
+    ├── posts
+    ├── public
+    ├── next-env.d.ts
+    ├── next.config.js
+    ├── package.json
+    ├── postcss.config.js
+    ├── tailwind.config.js
+    └── tsconfig.json
+
+## To Get Started
+### 1. Clone this repo
 
 ```bash
 git clone https://github.com/MaxwellKJr/malawianwriter.git
 ```
 
-#### 2. Cd into malawianwriter/ folder
+### 2. CD into malawianwriter/ folder
 
 ```bash
-cd malawianwriter
-```
+cd malawianwriter/
 
-```bash
+npm i
+# or
+yarn add
+
+# Once everything is installed run one of the following commands
 npm run dev
 # or
 yarn dev
