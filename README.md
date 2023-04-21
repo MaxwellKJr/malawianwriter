@@ -1,8 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Malawian Writer Website
 
-## Getting Started
+## Simple And Straight to the Point
+---
+The Malawian Writer Website is a markdown driven site built with Next.js 13 and TypeScript
+### To Get Started
+#### 1. Clone this repo
 
-First, run the development server:
+```bash
+git clone https://github.com/MaxwellKJr/malawianwriter.git
+```
+
+#### 2. Cd into malawianwriter/ folder
+
+```bash
+cd malawianwriter
+```
 
 ```bash
 npm run dev

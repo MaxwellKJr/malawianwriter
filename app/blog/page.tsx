@@ -22,7 +22,7 @@ const BlogPage = () => {
 
   return (
     <PageWrapper>
-      <main className="mt-[12vh] pt-16">
+      <main className="mt-[12vh] py-16">
         <div className="w-full sm:w-10/12 max-w-4xl p-4 lg:p-0 mx-auto">
           <div className="mb-8 lg:mb-16">
             <h1 className="text-2xl font-black text-center py-4 font-Dancing-Script">
