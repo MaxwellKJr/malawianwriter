@@ -12,7 +12,7 @@ const PostCard = ({ story }: StoryCardProps) => {
 			<small className='text-gray-700 dark:text-gray-300 opacity-80'>
 				{moment(date).format('dddd, Do MMMM YYYY')}
 			</small>
-			<Link href={`/blog/${slug}`}>
+			<Link href={`/stories/${slug}`}>
 				<h2 className='text-brand dark:hover:text-gray-300 text-2xl md:text-3xl 2xl:text-4xl font-serif font-bold'>
 					{title}
 				</h2>

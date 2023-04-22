@@ -11,7 +11,7 @@ interface StoriesProps {
 	}>;
 }
 
-const Posts = ({ storyMetadata }: StoriesProps) => {
+const Stories = ({ storyMetadata }: StoriesProps) => {
 	return (
 		<section className='flex flex-col md:grid md:grid-cols-2 md:gap-4 w-full h-full'>
 			{storyMetadata.map(story => (
@@ -21,4 +21,4 @@ const Posts = ({ storyMetadata }: StoriesProps) => {
 	);
 };
 
-export default Posts;
+export default Stories;

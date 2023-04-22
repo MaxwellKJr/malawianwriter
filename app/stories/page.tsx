@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
-import Posts from '@/components/Blog/Posts';
+import Stories from '@/components/Stories/Stories';
 import PageWrapper from '@/components/PageWrapper';
 import getStoriesMetadata from '@/components/models/getStoryMetadata';
 
 export const metadata: Metadata = {
-	title: 'Malawian Writer 🇲🇼 - Home',
+	title: 'Malawian Writer 🇲🇼 - Stories',
 	description:
 		'The Malawian Writer fiends for great stories, books and writing. From African Literature to stories from "A Galaxy Far Far Away".',
 	openGraph: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const StoriesPage = () => {
-	const postMetadata = getStoriesMetadata;
+	const storyMetadata = getStoriesMetadata();
 
 	return (
 		<PageWrapper>
@@ -35,7 +35,7 @@ const StoriesPage = () => {
 							</em>
 						</p>
 					</div>
-					<Posts postMetadata={postMetadata} />
+					<Stories storyMetadata={storyMetadata} />
 				</div>
 			</main>
 		</PageWrapper>
