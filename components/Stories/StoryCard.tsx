@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import PostCardProps from '../models/postCard';
+import StoryCardProps from '../models/storyCard';
 import moment from 'moment';
 import 'moment-timezone';
 import Tags from './Tags';
 
-const PostCard = ({ post }: PostCardProps) => {
-	const { title, date, description, slug, tags } = post;
+const PostCard = ({ story }: StoryCardProps) => {
+	const { title, date, description, slug, tags } = story;
 
 	return (
 		<div className='border-b-[1px] last:border-none dark:border-gray-300 dark:border-opacity-20 py-8 md:pb-8 md:mb-0 hover:scale-95 transform transition-all ease-in-out duration-300'>
