@@ -2,7 +2,7 @@ import Link from 'next/link';
 import PostCardProps from '../models/postCard';
 import moment from 'moment';
 import 'moment-timezone';
-import Tags from './Tags';
+import Tags from '../Tags';
 
 const PostCard = ({ post }: PostCardProps) => {
 	const { title, date, description, slug, tags } = post;

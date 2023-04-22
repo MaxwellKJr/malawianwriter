@@ -4,7 +4,7 @@ import PageWrapper from '@/components/PageWrapper';
 import getPostsMetadata from '@/components/models/getPostMetadata';
 
 export const metadata: Metadata = {
-	title: 'Malawian Writer 🇲🇼 - Home',
+	title: 'Malawian Writer 🇲🇼 - On Writing',
 	description:
 		'The Malawian Writer fiends for great stories, books and writing. From African Literature to stories from "A Galaxy Far Far Away".',
 	openGraph: {
@@ -24,7 +24,7 @@ const BlogPage = () => {
 		<PageWrapper>
 			<main className='mt-[12vh] py-16'>
 				<div className='w-full sm:w-10/12 max-w-4xl p-4 lg:p-0 mx-auto'>
-					<div className='mb-8 lg:mb-16'>
+					<div className='mb-8'>
 						<h1 className='text-2xl font-black text-center py-4 font-Dancing-Script'>
 							On Writing<span className='text-brand'>.</span>
 						</h1>
