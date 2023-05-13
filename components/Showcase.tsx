@@ -26,7 +26,7 @@ const Showcase = () => {
           and the rest is, well... history.
         </p>
       </div>
-      <About />
+      {/* <About /> */}
     </section>
   );
 };
