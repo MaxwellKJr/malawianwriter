@@ -12,6 +12,8 @@ The *Malawian Writer* brand is all about reviewing stories no matter the format 
 
 I am also a writer and therefore, will share my experiences as a writer. I have written a lot over the years and I am ready to share it to the world.
 
+Don't get me wrong, I am not an expert at the craft but I am willing to learn and as life as taught me, that if you want to master something, then I should try teaching/sharing it with someone else.
+
 ### Purpose
 
 I believe that we all come into this earth to fulfill a purpose. What varies, however, from person to person are the number of things that one must achieve in his or her lifetime. I, for one, without a doubt, believe that I was meant to write. Being an introvert, words (ironically) are the only way I can express myself. They keep me sane and help me share my views openly without the fear of being judged or laughed at. I mean, if someone laughs at my writing skills in the comfort of their home, that is really not my business.
@@ -22,11 +24,15 @@ This website will show you the true me, unfiltered, when it comes to the craft o
 
 ### How I Got Into Stories
 
-Well, I surrounded by a reasonable amount of books and people who loved to read. I remember my sisters reading novels while other family members were watching TV. I remember, growing up, I would see people reading books in the minibus on their way to school or work. It was normal then.
+Well, while growing up, I was surrounded by a reasonable amount of books and people who loved to read. I remember my sisters reading novels while other family members were watching TV. I remember, growing up, I would see people reading books in the minibus on their way to school or work. It was normal then.
 
 My mother also bought me short story books and some novellas from time to time but the 10 year old me could not handle them and I was less appreciative then. But sometimes, when playtime got boring for me, I would pick up a book and *try* to read them. I never finished them but at least I invested in them. This to me was the beginning.
 
-My turning point, however, came when I was at William Murray Secondary School. It is a boarding school and there was not much to do for fun then, besides books. Well, at least for me. I would then spend most of my time reading in the library. I don't know how it is now but during my time, man, there were not that many fun books. *Most* of the books were literally classics and were put there to educate rather than entertain. It was not a bad thing. I got introduced to *Great Expectations* which I never finished, but loved. I got to read *The Diary of Anne Frank*, *Into The Wild*, *Little House on the Prairie*, and other classics I am sure I have just forgotten. But yeah there were books. I was lucky to find *The Hitchhiker's Guide to The Galaxy* and its sequel which I dearly loved! Those were defining times for me.
+My turning point, however, came when I was at William Murray Secondary School. It is a boarding school and there was not much to do for fun then, besides books. Well, at least for me. I would then spend most of my time reading in the library. I don't know how it is now but during my time, man, there were not that many fun books.
+
+*Most* of the books were literally classics and were put there to educate rather than entertain. It was not a bad thing. I got introduced to *Great Expectations* which I never finished, but loved. I got to read *The Diary of Anne Frank*, *Into The Wild*, *Little House on the Prairie*, and other classics I am sure I have just forgotten.
+
+However, I was lucky to find *The Hitchhiker's Guide to The Galaxy* and its sequel which I dearly loved! Those were defining times for me.
 
 Every thing changed, when I read *Harry Potter and The Sorcer's Stone*. My experience after I read that book and the rest of the series, is what truly made who I am today as a writer and as a reader. This deserves a dedicated blog post of it own. In the mean time, get to know me more.
 
@@ -75,9 +81,9 @@ I don't know. I think this is all there is you need to know about me. For now, a
 
 Be sure to follow me on other Social Media platforms:
 
-[Twitter](https://twitter.com/malawianwriter)
-[Facebook](https://facebook.com/malawianwriter)
-[TikTok](https://tiktok.com/@malawianwriter)
+[Twitter](https://twitter.com/malawianwriter) <br/>
+[Facebook](https://facebook.com/malawianwriter) <br/>
+[TikTok](https://tiktok.com/@malawianwriter) <br/>
 [Instagram](https://instagram.com/malawianwriter) - Not yet on *Instagram Threads* at the time of publishing this.
 
 Feel free to also send me an email: malawianwriter@gmail.com. I would love to hear from you.
