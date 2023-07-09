@@ -11,7 +11,7 @@ import Footer from './Footer';
 const links = [
 	{ href: '/', label: 'Home', title: 'Home' },
 	{ href: '/blog', label: 'On Writing', title: 'Read Something' },
-	{ href: '/stories', label: 'Stories', title: 'Could be fiction' },
+	// { href: '/stories', label: 'Stories', title: 'Could be fiction' },
 	// { href: '/in-progress', label: 'In Progress', title: 'Work-in-progress' },
 ];
 
