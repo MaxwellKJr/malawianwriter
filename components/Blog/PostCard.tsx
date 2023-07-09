@@ -20,7 +20,7 @@ const PostCard = ({ post }: PostCardProps) => {
       <p className="text-sm md:text-md 2xl:text-lg font-Baskerville text-zinc-800 my-4">
         {description}
       </p>
-      <Link href={`/stories/${slug}`} className="text-brand hover:underline">
+      <Link href={`/blog/${slug}`} className="text-brand hover:underline">
         Read More...
       </Link>
       <Tags tags={tags} />
