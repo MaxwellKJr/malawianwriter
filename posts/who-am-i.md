@@ -50,7 +50,7 @@ First and foremost, I like my mothers cooking. Other than that,
 2. Coding
 3. Graphic Designing
 
-Fro some reason that felt like I am adding something on my resume. But yeah that what I mostly spend my free time on.
+*For some reason that felt like I am adding something on my resume. But yeah that what I mostly spend my free time on.*
 
 Now on to the book side of things
 
