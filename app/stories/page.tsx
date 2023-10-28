@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Malawian Writer on Writing 🇲🇼 | Blog",
     description:
       "The Malawian Writer shares everything regarding writing and storytelling in generally, favorite books, recommendations and in search of the next GREAT story.",
-    url: "https://malawianwriter.vercel.app",
+    url: "https://malawianwriter.vercel.app/",
     siteName: "Malawian Writer",
     type: "website",
   },

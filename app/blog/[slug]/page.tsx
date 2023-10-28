@@ -43,6 +43,7 @@ const PostPage = (props: any) => {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@malawianwriter" />
       <meta name="twitter:creator" content="@malawianwriter" />
+
       <div className="w-full sm:w-10/12 md:w-2/5 lg:w-[30%] max-w-4xl p-4 sm:px-0 mx-auto mt-[12vh] pt-16">
         <small className="text-gray-700 dark:text-gray-300 opacity-80">
           {moment(date).format("dddd, Do MMMM YYYY")}
