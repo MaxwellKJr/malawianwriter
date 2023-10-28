@@ -1,11 +1,12 @@
-import { faFacebook, faInstagram, faTiktok, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faThreads, faTiktok, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const socialLinks = [
   { href: "https://facebook.com/malawianwriter", icon: faFacebook, title: "Facebook" },
-  { href: "https://twitter.com/malawianwriter", icon: faTwitter, title: "Twitter" },
+  { href: "https://twitter.com/malawianwriter", icon: faXTwitter, title: "Twitter" },
   { href: "https://instagram.com/malawianwriter", icon: faInstagram, title: "Instagram" },
+  { href: "https://www.threads.net/@malawianwriter", icon: faThreads, title: "Threads" },
   { href: "https://tiktok.com/@malawianwriter", icon: faTiktok, title: "TikTok" },
 ];
 

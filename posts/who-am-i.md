@@ -67,7 +67,6 @@ Now on to the book side of things
 4. *The Blade Itself* by Joe Abercrombie
 5. *Misery* by Stephen King
 
-
 ### Top 5 Current Favorite Writers
 Before you get to criticize me and my taste, I just want to say that Western/Eastern Books are more accessible than African Books. Just saying 🤷‍♂️
 
