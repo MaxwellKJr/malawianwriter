@@ -1,7 +1,7 @@
-import Poem from "./post";
+import Poem from "./poem";
 
 interface PoemCardProps {
-  post: Poem;
+  poem: Poem;
 }
 
 export default PoemCardProps;

@@ -1,7 +1,7 @@
-import Story from './post';
+import Story from "./story";
 
 interface StoryCardProps {
-	story: Story;
+  story: Story;
 }
 
 export default StoryCardProps;
