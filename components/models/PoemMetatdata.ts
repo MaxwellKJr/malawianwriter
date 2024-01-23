@@ -1,4 +1,4 @@
-export default interface Story {
+export interface PostMetadata {
   title: string;
   date: string;
   description: string;

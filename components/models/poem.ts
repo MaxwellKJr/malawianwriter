@@ -1,4 +1,4 @@
-export default interface Story {
+export default interface Poem {
   title: string;
   date: string;
   description: string;
