@@ -23,7 +23,7 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const PostPage = (props: any) => {
+const StoryPage = (props: any) => {
   const slug = props.params.slug;
   const story = getStoryContent(slug);
   const date = story.data.date;
@@ -32,13 +32,25 @@ const PostPage = (props: any) => {
     <PageWrapper>
       <title>{`${story.data.title} | Malawian Writer 🇲🇼 Stories`}</title>
       <meta property="description" content={`${story.data.description}`} />
-      <meta property="og:title" content={`${story.data.title} | Malawian Writer 🇲🇼 Stoies`} />
+      <meta
+        property="og:title"
+        content={`${story.data.title} | Malawian Writer 🇲🇼 Stoies`}
+      />
       <meta property="og:description" content={`${story.data.description}`} />
-      <meta property="og:url" content={`https://malawianwriter.vercel.app/blog/${slug}`} />
+      <meta
+        property="og:url"
+        content={`https://malawianwriter.vercel.app/blog/${slug}`}
+      />
       <meta property="og:author" content="Maxwell Kapezi Jr" />
       <meta property="og:type" content="article" />
-      <meta property="article:published_time" content={moment(date).format("dddd, Do MMMM YYYY")} />
-      <meta name="twitter:title" content={`${story.data.title} | Malawian Writer 🇲🇼 Stories`} />
+      <meta
+        property="article:published_time"
+        content={moment(date).format("dddd, Do MMMM YYYY")}
+      />
+      <meta
+        name="twitter:title"
+        content={`${story.data.title} | Malawian Writer 🇲🇼 Stories`}
+      />
       <meta name="twitter:description" content={`${story.data.description}`} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@malawianwriter" />
@@ -60,4 +72,4 @@ const PostPage = (props: any) => {
   );
 };
 
-export default PostPage;
+export default StoryPage;

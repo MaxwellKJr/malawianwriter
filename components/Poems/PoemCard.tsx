@@ -12,7 +12,7 @@ const PoemCard = ({ poem }: PoemCardProps) => {
       <small className="text-gray-700 dark:text-gray-300 opacity-80">
         {moment(date).format("dddd, Do MMMM YYYY")}
       </small>
-      <Link href={`/stories/${slug}`}>
+      <Link href={`/poems/${slug}`}>
         <h2 className="text-brand dark:hover:text-gray-300 text-2xl md:text-3xl 2xl:text-4xl font-serif font-bold hover:underline">
           {title}
         </h2>
@@ -20,7 +20,7 @@ const PoemCard = ({ poem }: PoemCardProps) => {
       <p className="text-sm md:text-md 2xl:text-lg font-Baskerville text-zinc-800 my-4">
         {description}
       </p>
-      <Link href={`/stories/${slug}`} className="text-brand hover:underline">
+      <Link href={`/poems/${slug}`} className="text-brand hover:underline">
         Read More...
       </Link>
       <Tags tags={tags} />

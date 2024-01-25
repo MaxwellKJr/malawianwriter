@@ -32,13 +32,25 @@ const PostPage = (props: any) => {
     <PageWrapper>
       <title>{`${post.data.title} | Malawian Writer 🇲🇼 On Writing`}</title>
       <meta property="description" content={`${post.data.description}`} />
-      <meta property="og:title" content={`${post.data.title} | Malawian Writer 🇲🇼 On Writing`} />
+      <meta
+        property="og:title"
+        content={`${post.data.title} | Malawian Writer 🇲🇼 On Writing`}
+      />
       <meta property="og:description" content={`${post.data.description}`} />
-      <meta property="og:url" content={`https://malawianwriter.vercel.app/blog/${slug}`} />
+      <meta
+        property="og:url"
+        content={`https://malawianwriter.vercel.app/blog/${slug}`}
+      />
       <meta property="og:author" content="Maxwell Kapezi Jr" />
       <meta property="og:type" content="article" />
-      <meta property="article:published_time" content={moment(date).format("dddd, Do MMMM YYYY")} />
-      <meta name="twitter:title" content={`${post.data.title} | Malawian Writer 🇲🇼 On Writing`} />
+      <meta
+        property="article:published_time"
+        content={moment(date).format("dddd, Do MMMM YYYY")}
+      />
+      <meta
+        name="twitter:title"
+        content={`${post.data.title} | Malawian Writer 🇲🇼 On Writing`}
+      />
       <meta name="twitter:description" content={`${post.data.description}`} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@malawianwriter" />

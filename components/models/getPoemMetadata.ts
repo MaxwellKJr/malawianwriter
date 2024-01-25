@@ -1,14 +1,14 @@
 import fs from "fs";
 import matter from "gray-matter";
-import { PoemMetadata } from "./PoemMetadata";
+import { PoemMetadata } from "./PoemMetatdata";
 
 const getPoemsMetadata = (): PoemMetadata[] => {
   const folder = "poems/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
-  const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`posts/${fileName}`, `utf8`);
+  const poems = markdownPosts.map((fileName) => {
+    const fileContents = fs.readFileSync(`poems/${fileName}`, `utf8`);
     const matterResult = matter(fileContents);
 
     return {

@@ -1,12 +1,12 @@
 import fs from "fs";
-import getStoriesMetadata from "@/components/models/getStoryMetadata";
 import PageWrapper from "@/components/PageWrapper";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import moment from "moment";
 import Tags from "@/components/Tags";
+import getPoemsMetadata from "@/components/models/getPoemMetadata";
 
-const getStoryContent = (slug: string) => {
+const getPoemContent = (slug: string) => {
   const folder = "poems/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
@@ -16,25 +16,25 @@ const getStoryContent = (slug: string) => {
 };
 
 export const generateStaticParams = async () => {
-  const poems = getStoriesMetadata();
+  const poems = getPoemsMetadata();
 
   return poems.map((poem) => ({
     slug: poem.slug,
   }));
 };
 
-const PostPage = (props: any) => {
+const PoemPage = (props: any) => {
   const slug = props.params.slug;
-  const poem = getStoryContent(slug);
+  const poem = getPoemContent(slug);
   const date = poem.data.date;
 
   return (
     <PageWrapper>
-      <title>{`${poem.data.title} | Malawian Writer 🇲🇼 Stories`}</title>
+      <title>{`${poem.data.title} | Malawian Writer 🇲🇼Poems`}</title>
       <meta property="description" content={`${poem.data.description}`} />
       <meta
         property="og:title"
-        content={`${poem.data.title} | Malawian Writer 🇲🇼 Stoies`}
+        content={`${poem.data.title} | Malawian Writer 🇲🇼Poems`}
       />
       <meta property="og:description" content={`${poem.data.description}`} />
       <meta
@@ -49,7 +49,7 @@ const PostPage = (props: any) => {
       />
       <meta
         name="twitter:title"
-        content={`${poem.data.title} | Malawian Writer 🇲🇼 Stories`}
+        content={`${poem.data.title} | Malawian Writer 🇲🇼Poems`}
       />
       <meta name="twitter:description" content={`${poem.data.description}`} />
       <meta name="twitter:card" content="summary" />
@@ -72,4 +72,4 @@ const PostPage = (props: any) => {
   );
 };
 
-export default PostPage;
+export default PoemPage;
