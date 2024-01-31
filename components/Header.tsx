@@ -12,7 +12,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 const links = [
   { href: "/", label: "Home", title: "Home" },
-  { href: "/blog", label: "On Writing", title: "Read Something" },
+  { href: "/on-writing", label: "On Writing", title: "Read Something" },
   { href: "/stories", label: "Stories", title: "Could be fiction" },
   { href: "/poems", label: "Poems", title: "The Shakespeare in me" },
   // { href: '/in-progress', label: 'In Progress', title: 'Work-in-progress' },

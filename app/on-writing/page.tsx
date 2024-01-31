@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const BlogPage = () => {
+const OnWritingPage = () => {
   const postMetadata = getPostsMetadata();
 
   return (
@@ -42,4 +42,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default OnWritingPage;

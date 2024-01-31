@@ -12,7 +12,7 @@ const PostCard = ({ post }: PostCardProps) => {
       <small className="text-gray-700 dark:text-gray-300 opacity-80">
         {moment(date).format("dddd, Do MMMM YYYY")}
       </small>
-      <Link href={`/blog/${slug}`}>
+      <Link href={`/on-writing/${slug}`}>
         <h2 className="text-brand dark:hover:text-gray-300 text-2xl md:text-3xl 2xl:text-4xl font-serif font-bold hover:underline">
           {title}
         </h2>
@@ -20,7 +20,7 @@ const PostCard = ({ post }: PostCardProps) => {
       <p className="text-sm md:text-md 2xl:text-lg font-Baskerville text-zinc-800 my-4">
         {description}
       </p>
-      <Link href={`/blog/${slug}`} className="text-brand hover:underline">
+      <Link href={`/on-writing/${slug}`} className="text-brand hover:underline">
         Read More...
       </Link>
       <Tags tags={tags} />
