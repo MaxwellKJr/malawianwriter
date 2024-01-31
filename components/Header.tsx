@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import { faBarsStaggered, faClose } from "@fortawesome/free-solid-svg-icons";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import SocialLinks from "./SocialLinks";
 import Footer from "./Footer";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 
 const links = [
   { href: "/", label: "Home", title: "Home" },
@@ -18,7 +18,14 @@ const links = [
   // { href: '/in-progress', label: 'In Progress', title: 'Work-in-progress' },
 ];
 
-const Header = () => {
+interface NavLinkProps {
+  href: string;
+  children: ReactNode;
+}
+
+const Header: React.FC = () => {
+  const pathname = usePathname();
+
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [toggleNav, setToggleNav] = useState(false);
@@ -26,9 +33,6 @@ const Header = () => {
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  // Active Link
-  // const router = useRouter();
 
   const renderThemeChanger = () => {
     if (!mounted) return null;
@@ -69,18 +73,26 @@ const Header = () => {
 
         <div className="flex">
           <ul className="hidden lg:flex sm:justify-end justify-center items-center w-full border-t-[1px] sm:border-0 pt-4 sm:pt-0">
-            {links.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="uppercase text-xs xl:text-xs 2xl:text-sm text-black p-4 hover:text-brand"
-                  title={link.title}
-                  onClick={() => setToggleNav(!toggleNav)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
+            {links.map((link) => {
+              const isActive =
+                pathname.startsWith(link.href) && pathname.endsWith(link.href);
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={
+                      isActive
+                        ? "uppercase font-semibold text-xs xl:text-xs 2xl:text-sm text-brand dark:text-brand p-4 transition-all ease-in-out duration-300"
+                        : "uppercase text-xs xl:text-xs 2xl:text-sm text-black p-4 hover:text-brand transition-all ease-in-out duration-300"
+                    }
+                    title={link.title}
+                    onClick={() => setToggleNav(!toggleNav)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           <ul
@@ -91,18 +103,27 @@ const Header = () => {
             }
           >
             <div className="flex-1">
-              {links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="inline-block py-8 w-full border-b-[1px] dark:border-gray-300 dark:border-opacity-20 uppercase text-sm hover:text-brand"
-                    title={link.title}
-                    onClick={() => setToggleNav(!toggleNav)}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {links.map((link) => {
+                const isActive =
+                  pathname.startsWith(link.href) &&
+                  pathname.endsWith(link.href);
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={
+                        isActive
+                          ? "inline-block py-8 w-full border-b-[1px] dark:border-gray-300 dark:border-opacity-20 uppercase text-sm text-brand dark:text-brand hover:text-brand"
+                          : "inline-block py-8 w-full border-b-[1px] dark:border-gray-300 dark:border-opacity-20 uppercase text-sm hover:text-brand"
+                      }
+                      title={link.title}
+                      onClick={() => setToggleNav(!toggleNav)}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
 
               <h5 className="text-lg font-bold mt-8 text-zinc-900 dark:text-white">
                 Contact Me
