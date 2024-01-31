@@ -19,6 +19,7 @@ const getPoemsMetadata = (): PoemMetadata[] => {
         .replace(".", "")
         .toLowerCase() // Convert to lowercase
         .replace(/\s+/g, "-"), // Replace spaces with hyphens
+      tags: matterResult.data.tags,
     };
   });
 
