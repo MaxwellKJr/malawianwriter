@@ -4,10 +4,8 @@ import PoemCard from "./PoemCard";
 interface PoemsProps {
   poemMetadata: Array<{
     title: string;
-    date: string;
-    description: string;
+    created: string;
     slug: string;
-    tags: [];
   }>;
 }
 

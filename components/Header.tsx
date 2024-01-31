@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
@@ -7,6 +8,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import SocialLinks from "./SocialLinks";
 import Footer from "./Footer";
+import { useRouter } from "next/router";
 
 const links = [
   { href: "/", label: "Home", title: "Home" },
@@ -25,6 +27,9 @@ const Header = () => {
     setMounted(true);
   }, []);
 
+  // Active Link
+  // const router = useRouter();
+
   const renderThemeChanger = () => {
     if (!mounted) return null;
     const currentTheme = theme === "system" ? systemTheme : theme;
@@ -33,7 +38,7 @@ const Header = () => {
       return (
         <FontAwesomeIcon
           icon={faSun}
-          className="w-4 h-4 bg-slate-300 text-black rounded-lg p-2 select-none hover:cursor-pointer hover:scale-[.80]"
+          className="w-4 h-4 bg-gray-300 text-black rounded-lg p-2 select-none hover:cursor-pointer hover:scale-[.80]"
           role="button"
           onClick={() => setTheme("light")}
         />
@@ -42,7 +47,7 @@ const Header = () => {
       return (
         <FontAwesomeIcon
           icon={faMoon}
-          className="w-4 h-4 bg-zinc-800 text-white rounded-lg p-2 select-none hover:cursor-pointer hover:scale-[.80]"
+          className="w-4 h-4 bg-gray-900 text-white rounded-lg p-2 select-none hover:cursor-pointer hover:scale-[.80]"
           role="button"
           onClick={() => setTheme("dark")}
         />

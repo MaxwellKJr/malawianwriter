@@ -26,12 +26,12 @@ const StoriesPage = () => {
         <div className="w-full sm:w-10/12 max-w-4xl p-4 lg:p-0 mx-auto">
           <div className="mb-8">
             <h1 className="text-2xl font-black text-center py-4 font-Dancing-Script">
-              On Stories<span className="text-brand">.</span>
+              Poetry<span className="text-brand">.</span>
             </h1>
             <p className="font-medium text-center">
               <em>
-                &ldquo;Get an in-depth breakdown of my work and what I am
-                currently working on. Bit by bit.&rdquo;
+                &ldquo;Could be about love, or about politics, or about the time
+                I was laughed at in school.&rdquo;
               </em>
             </p>
           </div>

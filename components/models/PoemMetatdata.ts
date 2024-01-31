@@ -1,7 +1,5 @@
 export interface PoemMetadata {
   title: string;
-  date: string;
-  description: string;
+  created: string;
   slug: string;
-  tags: [];
 }

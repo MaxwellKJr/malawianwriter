@@ -26,7 +26,7 @@ export const generateStaticParams = async () => {
 const PoemPage = (props: any) => {
   const slug = props.params.slug;
   const poem = getPoemContent(slug);
-  const date = poem.data.date;
+  const date = poem.data.created;
 
   return (
     <PageWrapper>
@@ -63,7 +63,7 @@ const PoemPage = (props: any) => {
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-brand font-black">
           {poem.data.title}
         </h1>
-        <Tags tags={poem.data.tags} />
+        {/* <Tags tags={poem.data.tags} /> */}
         <article className="prose prose-zinc prose-sm xl:prose-base 2xl:prose-lg prose-headings:text-brand prose-headings:font-bold prose-h4:text-lg prose-h5:text-xl prose-p:font-Baskerville prose-p:py-2 sm:prose-p:py-0 prose-a:text-brand">
           <Markdown>{poem.content}</Markdown>
         </article>

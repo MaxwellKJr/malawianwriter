@@ -13,10 +13,12 @@ const getPoemsMetadata = (): PoemMetadata[] => {
 
     return {
       title: matterResult.data.title,
-      date: matterResult.data.date,
-      description: matterResult.data.description,
-      slug: fileName.replace(".md", ""),
-      tags: matterResult.data.tags,
+      created: matterResult.data.date,
+      slug: fileName
+        .replace(".md", "")
+        .replace(".", "")
+        .toLowerCase() // Convert to lowercase
+        .replace(/\s+/g, "-"), // Replace spaces with hyphens
     };
   });
 
