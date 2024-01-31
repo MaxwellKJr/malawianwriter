@@ -2,6 +2,7 @@
 title: 20. One Morning
 updated: 2024-01-31 11:35:16Z
 created: 2024-01-31 10:31:42Z
+description: From the Poetry Collection "A Man in Me - A Poetic Story" by Maxwell Kapezi Jr.
 latitude: -15.76667070
 longitude: 35.01678660
 altitude: 0.0000

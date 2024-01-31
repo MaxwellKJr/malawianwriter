@@ -14,6 +14,7 @@ const getPoemsMetadata = (): PoemMetadata[] => {
     return {
       title: matterResult.data.title,
       created: matterResult.data.date,
+      description: matterResult.data.description,
       slug: fileName
         .replace(".md", "")
         .replace(".", "")

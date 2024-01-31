@@ -2,6 +2,7 @@
 title: 13.Don't Judge Me
 updated: 2024-01-31 11:33:02Z
 created: 2024-01-31 10:28:19Z
+description: From the Poetry Collection "A Man in Me - A Poetic Story" by Maxwell Kapezi Jr.
 latitude: -15.76667070
 longitude: 35.01678660
 altitude: 0.0000

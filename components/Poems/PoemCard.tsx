@@ -5,7 +5,7 @@ import "moment-timezone";
 import Tags from "../Tags";
 
 const PoemCard = ({ poem }: PoemCardProps) => {
-  const { title, created, slug } = poem;
+  const { title, created, description, slug, tags } = poem;
 
   return (
     <div className="border-b-[1px] last:border-none dark:border-gray-300 dark:border-opacity-20 py-8 md:pb-8 md:mb-0 hover:-translate-y-4 transform transition-all ease-in-out duration-300">
@@ -17,13 +17,13 @@ const PoemCard = ({ poem }: PoemCardProps) => {
           {title}
         </h2>
       </Link>
-      {/* <p className="text-sm md:text-md 2xl:text-lg font-Baskerville text-zinc-800 my-4"> */}
-      {/*   {description} */}
-      {/* </p> */}
+      <p className="text-sm md:text-md 2xl:text-lg font-Baskerville text-zinc-800 my-4">
+        {description}
+      </p>
       <Link href={`/poems/${slug}`} className="text-brand hover:underline">
         Read More...
       </Link>
-      {/* <Tags tags={tags} /> */}
+      <Tags tags={tags} />
     </div>
   );
 };
