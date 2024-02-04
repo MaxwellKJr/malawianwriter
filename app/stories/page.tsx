@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   description:
     'The Malawian Writer fiends for great stories, books and writing. From African Literature to stories from "A Galaxy Far Far Away".',
   openGraph: {
-    title: "Malawian Writer on Writing 🇲🇼 | Blog",
+    title: "Malawian Writer on Writing 🇲🇼 |Stoies",
     description:
-      "The Malawian Writer shares everything regarding writing and storytelling in generally, favorite books, recommendations and in search of the next GREAT story.",
+      "The Malawian Writer shares everything regarding writing and storytelling in general, favorite books, recommendations and in search of the next GREAT story.",
     url: "https://malawianwriter.vercel.app/",
     siteName: "Malawian Writer",
     type: "website",
@@ -30,8 +30,8 @@ const StoriesPage = () => {
             </h1>
             <p className="font-medium text-center">
               <em>
-                &ldquo;Get an in-depth breakdown of my work and what I am currently working on. Bit
-                by bit.&rdquo;
+                &ldquo;Get an in-depth breakdown of my work and what I am
+                currently working on. Bit by bit.&rdquo;
               </em>
             </p>
           </div>

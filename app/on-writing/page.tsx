@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'The Malawian Writer fiends for great stories, books and writing. From African Literature to stories from "A Galaxy Far Far Away".',
   openGraph: {
-    title: "Malawian Writer on Writing 🇲🇼 | Blog",
+    title: "Malawian Writer 🇲🇼 - On Writing",
     description:
       "The Malawian Writer shares everything regarding writing and storytelling in generally, favorite books, recommendations and in search of the next GREAT story.",
     url: "https://malawianwriter.vercel.app/",

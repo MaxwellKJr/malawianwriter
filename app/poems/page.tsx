@@ -4,13 +4,13 @@ import PageWrapper from "@/components/PageWrapper";
 import getPoemMetadata from "@/components/models/getPoemMetadata";
 
 export const metadata: Metadata = {
-  title: "Malawian Writer 🇲🇼 - Stories",
+  title: "Malawian Writer 🇲🇼 - Poems",
   description:
     'The Malawian Writer fiends for great stories, books and writing. From African Literature to stories from "A Galaxy Far Far Away".',
   openGraph: {
-    title: "Malawian Writer on Writing 🇲🇼 | Blog",
+    title: "Malawian Writer 🇲🇼 - Poems",
     description:
-      "The Malawian Writer shares everything regarding writing and storytelling in generally, favorite books, recommendations and in search of the next GREAT story.",
+      "The Malawian Writer shares everything regarding writing and storytelling in general, favorite books, recommendations and in search of the next GREAT story.",
     url: "https://malawianwriter.vercel.app/",
     siteName: "Malawian Writer",
     type: "website",
