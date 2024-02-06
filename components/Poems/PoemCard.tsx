@@ -1,7 +1,6 @@
 import Link from "next/link";
 import PoemCardProps from "../models/poemCard";
 import moment from "moment";
-import "moment-timezone";
 import Tags from "../Tags";
 
 const PoemCard = ({ poem }: PoemCardProps) => {
